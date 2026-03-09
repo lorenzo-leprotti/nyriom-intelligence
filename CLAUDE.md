@@ -2,7 +2,7 @@
 
 **Stack:** Python + Flask + Jinja2 + Tailwind CSS (CDN + typography plugin) + Supabase + Perplexity AI
 **Deployment:** Vercel (Root Directory: `.`, Production Branch: `main`)
-**Live URL:** https://nyriom-intelligence.vercel.app
+**Live URL:** https://nyriom-intel-hub.vercel.app
 
 ## Architecture
 

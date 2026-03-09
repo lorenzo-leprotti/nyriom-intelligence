@@ -2,7 +2,7 @@
 
 AI-powered market intelligence platform for a cross-industry advanced materials startup. Tracks industry events across 4 verticals, auto-generates post-event summaries using a two-pass AI research pipeline, and delivers weekly intelligence reports through an editorial-style dashboard.
 
-**Live demo:** [nyriom-intelligence.vercel.app](https://nyriom-intelligence.vercel.app)
+**Live demo:** [nyriom-intel-hub.vercel.app](https://nyriom-intel-hub.vercel.app)
 
 ![Intelligence Dashboard — Aerospace vertical](docs/screenshots/dashboard-aerospace.png)
 

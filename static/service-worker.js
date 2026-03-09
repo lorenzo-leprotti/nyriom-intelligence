@@ -3,7 +3,7 @@
  * Handles caching strategies, offline functionality, and forced updates
  */
 
-const CACHE_VERSION = 'nyriom-intel-v4';
+const CACHE_VERSION = 'nyriom-intel-v5';
 const OFFLINE_URL = '/offline';
 
 const PRECACHE_ASSETS = [
@@ -56,6 +56,7 @@ self.addEventListener('fetch', (event) => {
   const { request } = event;
   const url = new URL(request.url);
   if (request.method !== 'GET') return;
+  if (url.origin !== self.location.origin) return;
   if (url.pathname.startsWith('/api/')) return;
 
   if (isStaticAsset(url.pathname)) {
