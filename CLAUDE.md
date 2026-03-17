@@ -9,12 +9,12 @@
 - `main.py` — Flask app with all routes, auth middleware, CSRF protection, CSP headers
 - `services/perplexity_service.py` — Two-pass AI pipeline (sonar → sonar-pro) for event summaries and intelligence reports. Includes nh3 HTML sanitization.
 - `templates/` — Jinja2 templates (base, home, login, index/dashboard, events, event_detail, archive, report_view, admin, upload_events, offline)
-- `templates/base.html` — Shared layout, bottom nav, Tailwind CDN (`?plugins=typography`), CSRF meta tag, NyriomDropdown shared JS utility
+- `templates/base.html` — Shared layout, bottom nav, Tailwind v4 play CDN (`cdn.tailwindcss.com`) with `@plugin "@tailwindcss/typography"` in a `<style type="text/tailwindcss">` block, CSRF meta tag, NyriomDropdown shared JS utility
 - `templates/index.html` — Dashboard with Jinja macro `vertical_section()` for vertical sections; custom dropdown selector with color dots; two-column layout (headlines sidebar + inline full report) on desktop, stacked on mobile
 - `templates/events.html` — Event listing with custom industry dropdown + time filter pills; pagination
 - `templates/archive.html` — Historical report archive with custom dropdowns for vertical and timeframe filters
 - `templates/report_view.html` — Standalone printable report page (editorial layout with print styles)
-- `static/service-worker.js` — PWA caching (cache name: nyriom-intel-v2)
+- `static/service-worker.js` — PWA caching (cache name: nyriom-intel-v6)
 - `data/sample_events.csv` — 36 industry events across 4 verticals
 - `scripts/seed_data.py` — Wipes Supabase tables, seeds events from CSV
 - `scripts/generate_summaries.py` — Generates AI summaries for past events (bypasses Flask, calls Perplexity directly)
