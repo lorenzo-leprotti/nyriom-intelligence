@@ -4,28 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Nyriom Intelligence</title>
-    <script src="https://cdn.tailwindcss.com?plugins=typography"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        serif: ['Georgia', 'Times New Roman', 'serif'],
-                        sans: ['Inter', 'system-ui', 'sans-serif'],
-                    },
-                    colors: {
-                        industry: {
-                            aerospace: '#2563eb',
-                            automotive: '#0e7490',
-                            robotics: '#ea580c',
-                            ai: '#0d9488',
-                        }
-                    }
-                }
-            }
-        }
-    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@3.4.17/dist/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tailwindcss/typography@0.5.15/dist/typography.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .font-serif { font-family: Georgia, 'Times New Roman', serif; }
+        body, .font-sans { font-family: 'Inter', system-ui, sans-serif; }
+    </style>
 
     <!-- PWA Meta Tags -->
     <link rel="manifest" href="/manifest.json">
